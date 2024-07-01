@@ -3,27 +3,20 @@ import { Highlight, themes } from "prism-react-renderer";
 import "./CodeEditor.css";
 
 const initialCode = `
-#include <iostream>
-using namespace std;
+let n = 5; 
 
-int main() {
-    int n;
-    long factorial = 1.0;
-
-    cout << "Enter a positive integer: ";
-    cin >> n;
-
-    if (n < 0)
-        cout << "Error! Factorial of a negative number doesn't exist.";
-    else {
-        for(int i = 1; i <= n; ++i) {
-            factorial *= i;
-        }
-        cout << "Factorial of " << n << " = " << factorial;    
-    }
-
-    return 0;
+function factorial(n) { 
+    let ans = 1; 
+    
+    if(n === 0)
+        return 1;
+    for (let i = 2; i <= n; i++) 
+        ans = ans * i; 
+    return ans; 
 }
+
+console.log(factorial(n));
+
 `;
 
 const CodeEditor = () => {
