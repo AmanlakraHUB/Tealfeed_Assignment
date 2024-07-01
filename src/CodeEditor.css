@@ -1,0 +1,56 @@
+.code-editor {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Fira Code', monospace;
+}
+
+.code-input {
+  width: 99%;
+  height: 100%;
+  background: none;
+  color: transparent;
+  caret-color: rgb(234, 209, 209); 
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 11px;
+  padding-left: 42px;
+  resize: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden; 
+  white-space: pre-wrap;
+  word-wrap: break-word; 
+}
+
+.code-output {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: #282c34;
+  color: #abb2bf;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  z-index: 1;
+}
+
+pre {
+  margin: 0;
+}
+
+.line-number {
+  display: inline-block;
+  width: 2em;
+  user-select: none;
+  opacity: 0.5;
+}
+
+  
